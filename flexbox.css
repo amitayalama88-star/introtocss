@@ -1,0 +1,64 @@
+body{
+    text-align: center;
+}
+.container{
+    width: 1000px;
+    height: 20px;
+    border: 4px solid black;
+    display: flex;
+    flex-direction: column;
+    /* justify-content:center; */
+    justify-content: space-between;
+    /* align-items: center; */
+    /* align-content: flex-start; */
+    /* align-content: center; */
+    /* flex-wrap:wrap; */
+/* 
+    gap: 4px; */
+    /* justify-content: flex-end; */
+    
+    /* justify-content: space-around; */
+    /* align-items: stretch; */
+    /* align-items: baseline; */
+    /* flex-direction: row-reverse */
+}
+.boxes{
+    width: 100px;
+    border: 2px solid black;
+    display: inline-block;
+    /* align-items: center; */
+}
+#services{
+    /* align-self: flex-start; */
+    /* flex-basis: 200px; */
+    /* flex-grow: 1; */
+    flex-shrink: 8;
+    /* order: 1; */
+    align-items: right;
+;
+}
+#projects{
+    /* align-self: flex-end; */
+        /* flex-grow: 2; */
+         width: 5px;
+        flex-shrink: 8;
+        align-items: center;
+
+}
+
+#about{
+    flex-shrink: 8;
+    align-items: left;
+    
+
+}
+
+#contact{
+    flex-grow: 5; 
+
+
+}
+#Logobakery{
+    flex-grow: 5;
+    justify-content: flex-start;
+}
