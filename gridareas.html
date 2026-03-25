@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gried area practice</title>
+   <style>
+    .container{
+        width: 100%;
+        height: 600px;
+        background-color: green;
+        display: grid;
+        grid-template-areas: "header header header" "side content1 content1" "side content2 content3""footer footer footer";
+
+    }
+    
+    .items{
+        background-color: greeb;
+        border: 3px solid white;
+        text-align: center;
+
+    }
+    #items1{
+        grid-area: header;
+
+    }
+    #items2{
+        grid-area: side;
+
+    }
+    #items3{
+        grid-area: content1;
+
+    }
+    #items4{
+        grid-area: content2;
+    }
+    #items5{
+        grid-area: content3;
+    }
+    #items6{
+        grid-area: footer;
+    }
+    </style>
+</head>
+<body>
+        <div class="container">
+        <div class="items" id="items1">Header</div>
+        <div class="items" id="items2">side</div>
+        <div class="items" id="items3">content1</div>
+        <div class="items" id="items4">content2</div>
+        <div class="items" id="items5">content3</div>
+        <div class="items" id="items6">footer</div>
+        
+    </div>
+    
+</body>
+</html>
