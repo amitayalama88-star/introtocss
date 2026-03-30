@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vh and vw</title>
+    <style>
+        @media screen and (orientation: portrait) {
+            body {
+                background-color: yellow;
+            }
+
+
+        }
+
+        @media screen and (orientation: landscape) {
+            body {
+                background-color: darkgoldenrod;
+            }
+
+        }
+
+        @media print {
+            #box1 {
+                width: 150px;
+                height: 150px;
+                border: 10px solid black;
+                background-color: powderblue;
+            }
+
+        }
+
+        /* #box1 {
+            width: 1000px;
+            height: 2000px;
+            background-color: greenyellow;
+            border: 2px solid black;
+        }
+
+        @media screen and (width:600px) {
+            #box1 {
+                width: 600;
+                height: 500px;
+                background-color: aqua;
+                border: 2px dashed brown;
+            }
+
+        } */
+        #box1 {
+            width: 150px;
+            height: 150px;
+            border: 2px solid black;
+            background-color: aqua;
+        }
+
+        #box2 {
+            width: 150px;
+            height: 150px;
+            border: 2px solid red;
+            background-color: cadetblue;
+        }
+
+        @media screen and (min-width: 300px) {
+            #box1 {
+                width: 400px;
+                height: 400px;
+                background-color: greenyellow;
+
+            }
+        }
+
+        @media screen and (max-width: 100px) {
+            #box1 {
+                width: 400px;
+                height: 400px;
+                background-color: purple;
+
+            }
+        }
+
+        @media screen and (min-width: 100px) and (max-width: 300px) {
+            #box1 {
+                width: 400px;
+                height: 400px;
+                background-color: crimson;
+
+            }
+
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box1">hello</div>
+    <div id="box2">hi</div>
+
+</body>
+
+</html>
